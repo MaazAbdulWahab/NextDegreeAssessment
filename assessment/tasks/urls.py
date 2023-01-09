@@ -6,6 +6,7 @@ urlpatterns = [
     
     
     path('tasks/', TasksCRUD.as_view()),
+    path('bulk/',BulkTasks.as_view() )
 
     
 ]
