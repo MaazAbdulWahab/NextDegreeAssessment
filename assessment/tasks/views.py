@@ -19,6 +19,7 @@ def create_task(user, title, description, due):
     t=Task.objects.create(user=user, title=title, description=description,
                     due=due, status= Task.STATUS_TYPE_PENDING)
     return t.id
+    
 
 
 class TasksCRUD(APIView):
